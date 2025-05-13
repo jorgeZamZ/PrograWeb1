@@ -1,57 +1,60 @@
 body {
-  background-color: #121212; /* Fondo oscuro */
-  color: #ffffff; /* Texto blanco */
+  background-color: #E8F5E9; /* Fondo general */
+  color: #000000; /* Texto negro para contraste */
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
-img {
-  border: #0e4906 solid 2px; /* Light gray border */
-  min-width: 100px;
-}
 
 .offcanvas {
-  color : #ffffff; /* Cambia el color del texto a blanco */
-  background-color: #030303; /* White background */
+  color: #388E3C; /* Cambia el color del texto */
+  background-color: #E8F5E9;
+  border-radius: 10px; /* Bordes redondeados */
 }
 
-.navbar{
-  background-color: #030303; /* White background */
+.navbar {
+  margin: 10px 5%;
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #d8eed9; /* Fondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra normal */
 }
 
 .navbar-brand img {
-  width: 70px; /* Adjust the size of the logo */
+  width: 70px; /* Ajusta el tamaño del logo */
   height: auto;
   transition: filter 0.3s ease;
-  border: 2px solid #ffffff;
-}
-
-.navbar-brand img:hover {
-  filter: brightness(0.5);
+  border-radius: 50%; /* Bordes redondeados para el logo */
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff; /* Cambia el color del texto a blanco */
+  color: #388e3c; /* Cambia el color del texto */
 }
 
 .navbar-nav .nav-link:hover {
-  color: #cccccc; /* Opcional: Cambia el color al pasar el mouse */
+  color: #2E7D32; /* Cambia el color al pasar el mouse */
+}
+
+h1 {
+  color: #2E7D32; /* Color del título */
+}
+
+h2 {
+  color: #388E3C; /* Color del subtítulo */
 }
 
 .login-button {
-  /*box-shadow: #5a5a5a 0px 0px 5px; White shadow */
-  color: #ffffff; /* White text */
+  background-color: #1B5E20; /* Fondo del botón */
+  color: #ffffff; /* Texto blanco */
   text-decoration: none;
   margin: 3px;
   padding: 6px 8px;
   border-radius: 50px;
-  transition:box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 .login-button:hover {
-  box-shadow: #5a5a5a 0px 0px 5px; /* White shadow */
-  
+  box-shadow: 0 0 10px rgba(27, 94, 32, 0.5); /* Sombra al pasar el mouse */
   color: #ffffff;
 }
 
@@ -66,36 +69,36 @@ p {
   background-size: cover;
   width: 100%;
   position: relative;
-  box-shadow: inset 0 20px 30px rgba(0, 0, 0, 0.7); /* Sombra interna más profunda */
   margin-bottom: 20px; /* Espaciado para separar visualmente */
-}
-
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.466); /* Superposición más oscura */
+  height: 80vh;
+  display: flex;
 }
 
 .hero-section .container {
-  height: 92vh;
-  z-index: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
+
+  margin: auto;
+  margin-right: 20%;
+  width: auto;
+}
+
+.hero-section .container h1 {
+  color: #ffffff; /* Color del texto */
+  font-size: 7rem; /* Tamaño del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+  background-color: rgba(8, 179, 22, 0.493);
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */;
 }
 
 .basic-info {
-  color: #ffffff; /* Texto blanco */
+  background-color: #C8E6C9; /* Fondo de las tarjetas */
+  color: #000000; /* Texto negro */
   margin: 20px 0;
   padding: 20px;
-  
+  border-top: 1px solid #388E3C; /* Línea horizontal superior */
+  border-bottom: 1px solid #388E3C; /* Línea horizontal inferior */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 .navbar-toggler-icon{
@@ -125,22 +128,27 @@ p {
   display: flex; /* Activa Flexbox */
   align-items: center; /* Alinea verticalmente los elementos */
   justify-content: space-between; /* Espacia los elementos */
-  color: #ffffff;
+  background-color: #C8E6C9; /* Fondo de las tarjetas */
+  color: #000000; /* Texto negro */
   margin: 10px 0;
   padding: 20px;
-
+  border-top: 1px solid #388E3C; /* Línea horizontal superior */
+  border-bottom: 1px solid #388E3C; /* Línea horizontal inferior */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 .textbox img {
   max-width: 35%; /* Ajusta el tamaño de la imagen */
   height: auto; /* Mantén la proporción */
-  border: none; /* Elimina bordes innecesarios */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 .textbox p {
   max-width: 60%; /* Ajusta el ancho del texto */
   margin-left: 10px; /* Espaciado entre la imagen y el texto */
-  color: #cccccc; /* Texto gris claro */
+  color: #000000; /* Texto negro */
 }
 
 /* Responsividad para pantallas pequeñas */
@@ -160,6 +168,18 @@ p {
     max-width: 90%; /* Texto más ancho */
     margin-left: 0; /* Elimina el margen izquierdo */
   }
+
+  .hero-section .container {
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+  }
+
+  .navbar {
+    border-radius: 0 0 10px 10px; /* Solo afecta las esquinas inferiores */
+    margin: 0; /* Elimina los márgenes en pantallas pequeñas */
+      box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.5); /* Sombra interior solo en la parte de abajo */
+  }
+  
 }
 
 .galeria {
@@ -167,22 +187,27 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Diseño responsivo */
   gap: 16px;
-  background-color: #1e1e1e; /* Fondo plano oscuro */
-  border-top: 1px solid #444444; /* Línea horizontal superior */
-  border-bottom: 1px solid #444444; /* Línea horizontal inferior */
+  background-color: #C8E6C9; /* Fondo de las tarjetas */
+  border-top: 1px solid #388E3C; /* Línea horizontal superior */
+  border-bottom: 1px solid #388E3C; /* Línea horizontal inferior */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 .galeria img {
   width: 100%;
   height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 footer {
-  background-color: #030303; /* Fondo oscuro consistente */
-  color: #ffffff;
+  background-color: #C8E6C9; /* Fondo del footer */
+  color: #000000; /* Texto negro */
   padding: 20px;
-  border-top: 1px solid #444444; /* Línea horizontal superior */
+  border-top: 1px solid #388E3C; /* Línea horizontal superior */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 footer .tabla-footer {
@@ -192,16 +217,16 @@ footer .tabla-footer {
 
 footer .tabla-footer th,
 footer .tabla-footer td {
-  border-top: 1px solid #444444; /* Líneas horizontales */
+  border-top: 1px solid #388E3C; /* Líneas horizontales */
   padding: 10px;
   text-align: center;
 }
 
 footer .tabla-footer a {
-  color: #cccccc; /* Enlaces gris claro */
+  color: #2E7D32; /* Enlaces verdes */
   text-decoration: none;
 }
 
 footer .tabla-footer a:hover {
-  color: #ffffff; /* Enlaces blancos al pasar el mouse */
+  color: #1B5E20; /* Enlaces más oscuros al pasar el mouse */
 }
