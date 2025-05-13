@@ -69,14 +69,13 @@ p {
   background-size: cover;
   width: 100%;
   position: relative;
-  margin-bottom: 20px; /* Espaciado para separar visualmente */
-  height: 80vh;
+  margin-bottom: 10px; /* Espaciado para separar visualmente */
+  height: 95vh;
   display: flex;
   box-shadow: inset 0 -1px 25px rgba(0, 0, 0, 0.5); /* Sombra interior */
 }
 
 .hero-section .container {
-
   margin: auto;
   margin-right: 20%;
   width: auto;
@@ -92,12 +91,11 @@ p {
 }
 
 .basic-info {
+  margin-bottom: 250px; /* Espaciado para separar de la sección inferior */
   background-color: #C8E6C9; /* Fondo de las tarjetas */
   color: #000000; /* Texto negro */
   margin: 20px 0;
   padding: 20px;
-  border-top: 1px solid #388E3C; /* Línea horizontal superior */
-  border-bottom: 1px solid #388E3C; /* Línea horizontal inferior */
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
@@ -129,14 +127,9 @@ p {
   display: flex; /* Activa Flexbox */
   align-items: center; /* Alinea verticalmente los elementos */
   justify-content: space-between; /* Espacia los elementos */
-  background-color: #C8E6C9; /* Fondo de las tarjetas */
   color: #000000; /* Texto negro */
-  margin: 10px 0;
   padding: 20px;
-  border-top: 1px solid #388E3C; /* Línea horizontal superior */
-  border-bottom: 1px solid #388E3C; /* Línea horizontal inferior */
   border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 .textbox img {
@@ -187,13 +180,12 @@ p {
 }
 
 .galeria {
+  margin: 15px 0;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Diseño responsivo */
   gap: 16px;
   background-color: #C8E6C9; /* Fondo de las tarjetas */
-  border-top: 1px solid #388E3C; /* Línea horizontal superior */
-  border-bottom: 1px solid #388E3C; /* Línea horizontal inferior */
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
@@ -202,16 +194,15 @@ p {
   width: 100%;
   height: auto;
   border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 footer {
   background-color: #C8E6C9; /* Fondo del footer */
   color: #000000; /* Texto negro */
   padding: 20px;
-  border-top: 1px solid #388E3C; /* Línea horizontal superior */
   border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 footer .tabla-footer {
