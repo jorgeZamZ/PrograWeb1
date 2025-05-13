@@ -72,6 +72,7 @@ p {
   margin-bottom: 20px; /* Espaciado para separar visualmente */
   height: 80vh;
   display: flex;
+  box-shadow: inset 0 -1px 25px rgba(0, 0, 0, 0.5); /* Sombra interior */
 }
 
 .hero-section .container {
@@ -172,6 +173,9 @@ p {
   .hero-section .container {
     margin: 0 auto; /* Centra horizontalmente */
     text-align: center; /* Centra el contenido dentro del contenedor */
+  }
+  .hero-section .container h1{
+    font-size: 5rem;
   }
 
   .navbar {
