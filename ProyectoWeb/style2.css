@@ -42,7 +42,7 @@
       }
 
       .navbar {
-        background-color: #d0d7a1; /* Navbar background */
+        background-color: #ebe5cc;
         color: #606c38;
         border-bottom: 2px solid #a9b57c;
       }
@@ -54,7 +54,6 @@
 
       .hero-section {
         padding: 50px 0;
-        text-align: center;
         border-radius: 10px;
 
       }
@@ -78,12 +77,19 @@
         color: #606c38;
       }
 
+#tabla {
+    background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
       .table {
         background-color: #d0d7a1; /* Table background */
         color: #606c38;
       }
 
       .table th, .table td {
+        
         border-color: #a9b57c;
       }
 

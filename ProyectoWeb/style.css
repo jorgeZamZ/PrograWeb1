@@ -23,13 +23,11 @@
   text-align: center;
 }
 
-h1 {
-  background-color: aqua;
-}
 
 #tabla {
   margin: 20px;
 }
+
 main{
   margin: auto;
   max-width: 72rem;
