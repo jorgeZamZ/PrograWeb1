@@ -12,6 +12,7 @@
 
 .hero-section {
   height: 60vh;
+  margin-top: 150px;
 }
 
 .padiny {
@@ -22,6 +23,7 @@
 .text-center {
   text-align: center;
 }
+
 
 
 #tabla {

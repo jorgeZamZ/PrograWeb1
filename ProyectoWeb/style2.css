@@ -53,7 +53,6 @@
       }
 
       .hero-section {
-        padding: 50px 0;
         border-radius: 10px;
 
       }
@@ -63,7 +62,7 @@
       }
 
       .hero-section p {
-        color: #a9b57c; /* Hero subtitle */
+        color:rgb(85 85 85); /* Hero subtitle */
       }
 
       .hero-section .btn {
@@ -77,11 +76,36 @@
         color: #606c38;
       }
 
-#tabla {
-    background-color: #ffffff;
-        padding: 20px;
-        border-radius: 10px;
+      #heroimg{
+        border-radius: 50px;
       }
+
+      .bordeizq li {
+        list-style-type: decimal;
+  border-left: 4px solid #606c38;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+#tabla{
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ol, ul {
+  list-style-position: inside; /* Mueve el marcador dentro del margen */
+}
+
+.fullfil{
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
       .table {
         background-color: #d0d7a1; /* Table background */
