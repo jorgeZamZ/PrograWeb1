@@ -1,0 +1,93 @@
+ body {
+        background-color: #ebe5cc; /* Background */
+        color: #606c38; /* General text color */
+      }
+
+      h1, h2 {
+        color: #606c37; /* Title */
+      }
+
+      h2 {
+        color: #a9b57c; /* Subtitle */
+      }
+
+      .card {
+        background-color: #d0d7a1; /* Card Background */
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-title {
+        color: #606c38; /* Title inside cards */
+      }
+
+      .btn-primary {
+        background-color: #e4eac3; /* Button */
+        color: #606c38; /* Button text */
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-primary:hover {
+        background-color: #606c37; /* Button hover */
+        color: #e4eac3;
+      }
+
+      footer {
+        background-color: #d0d7a1; /* Footer background */
+        color: #606c38; /* Footer text */
+        padding: 20px;
+        border-top: 2px solid #a9b57c;
+      }
+
+      .navbar {
+        background-color: #d0d7a1; /* Navbar background */
+        color: #606c38;
+        border-bottom: 2px solid #a9b57c;
+      }
+
+      .navbar-brand img {
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .hero-section {
+        padding: 50px 0;
+        text-align: center;
+        border-radius: 10px;
+
+      }
+
+      .hero-section h1 {
+        color: #606c38; /* Hero title */
+      }
+
+      .hero-section p {
+        color: #a9b57c; /* Hero subtitle */
+      }
+
+      .hero-section .btn {
+        background-color: #e4eac3; /* Hero button */
+        color: #606c38;
+        border: none;
+      }
+
+      .hero-section .btn:hover {
+        background-color: #d0d7a1;
+        color: #606c38;
+      }
+
+      .table {
+        background-color: #d0d7a1; /* Table background */
+        color: #606c38;
+      }
+
+      .table th, .table td {
+        border-color: #a9b57c;
+      }
+
+      iframe {
+        border: 2px solid #a9b57c;
+        border-radius: 10px;
+      }

@@ -11,11 +11,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
   </head>
 
   <body>
     <!-- nav bar inicio -->
-
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand me-auto" href="#">
@@ -47,10 +47,10 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  ingles
+                  hogar
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="hogar.html">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -126,76 +126,149 @@
         </button>
       </div>
     </nav>
-
     <!-- nav bar final -->
-    <!-- hero inicio -->
 
-    <section class="hero-section">
-      <div class="container d-flex justify-content-center flex-column">
-        <h1>EcoBlog</h1>
+    <!-- hero inicio -->
+    <section class=" hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-6">
+            <div class="hero-content">
+              <h1>viviendo verdeer</h1>
+              <p>
+                loren ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatibus, cumque, quibusdam, voluptates quisquam
+                voluptatibus.
+              </p>
+              <a href="#basic-info" class="btn btn-primary"
+                >comenzar el viaje</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="hero-image.jpg"
+              alt="Hero Image"
+              class="img-fluid "
+            />
+          </div>
+        </div>
       </div>
     </section>
-
     <!-- hero final -->
+    <main calss="mcontainer">
+      <!-- basic info inicio -->
+      <section class="padiny" id="basic-info">
+        <h2>espacios</h2><br>
+        <div
+          class=" mx-auto container-md row justify-content-center width-100"
+        >
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- basic info final -->
 
-    <div class="text-margin basic-info" id="basic-info">
-      <h1>titulo</h1>
-      <div class="textbox">
-      <p id="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa atque iusto architecto possimus eligendi fugit itaque accusamus nostrum veritatis qui soluta doloribus eaque dolor voluptas expedita minima voluptatem, dolores velit?</p>
-      <img src="#" alt="imagen1" id="imagent1"/>
-      </div>
-      
-      <h2>subtitulo</h2>
-      <div class="textbox">
-      <p id="text2">lorem ipsum</p>
-      <img src="#" alt="imagen2" id="imagent2"/>
-      </div>
-      
-      <h2>subtitulo</h2>
-      <div class="textbox">
-      <p id="text3">lorem ipsum</p>
-      <img src="#" alt="imagen3" id="imagent3"/>
-      </div>
-    </div>
+      <!-- primeros pasos inicio -->
+      <section class="padiny">
+        <h2>primeros pasos</h2><br>
+        <div class=" row justify-content-center">
+          
+          <div class=" col-4">One of two columns</div>
+          <div class="col-4">One of two columns</div>
+        </div>
+      </section>
+      <!-- primeros pasos final -->
 
-    <div class="menu"></div>
+      <!-- tabla inicio -->
+      <section class="padiny">
+        <div class=" d-flex justify-content-center" id="tabla">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>Larry the Bird</td>
+                <td>@twitter</td>
+                <td>hola</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- tabla final -->
 
-    <div class="galeria">
-      <div class="imagenes">
-        <img src="#" alt="imagen1" />
-        <img src="#" alt="imagen2" />
-        <img src="#" alt="imagen3" />
-        <img src="#" alt="imagen4" />
-        <img src="#" alt="imagen5" />
-        <img src="#" alt="imagen6" />
-      </div>
-    </div>
+      <!-- iframe inicio -->
+      <section class="padiny">
+        <h2>iframe</h2><br>
+        <div class="d-flex justify-content-center">
+          <div class="container-md text-center">
+            <iframe
+              src=""
+              frame="0"
+              class=""
+              style="width: 80%; height: 400px"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- iframe final -->
+    </main>
 
-    <footer>
-      <div class="footer">
-        <table class="tabla-footer">
-          <thead>
-            <tr>
-              <th class="columna">Idioma</th>
-              <th class="columna">Producción</th>
-              <th class="columna">Enlace</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="celda"><a href="#" class="enlace">Inglés</a></td>
-              <td class="celda"><a href="#" class="enlace">Producción 1</a></td>
-              <td class="celda"><a href="#" class="enlace">Conócenos</a></td>
-            </tr>
-            <tr>
-              <td class="celda"><a href="#" class="enlace">Español</a></td>
-              <td class="celda"><a href="#" class="enlace">Producción 2</a></td>
-              <td class="celda"><a href="#" class="enlace">Inicio</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <!-- footer inicio -->
+    <footer class="text-center py-4 -top">
+      <p>&copy; 2023 RapBlog. Todos los derechos reservados.</p>
     </footer>
+    <!-- footer final -->
 
     <!-- recursos de script -->
     <script
