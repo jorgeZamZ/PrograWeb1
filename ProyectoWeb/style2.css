@@ -53,16 +53,46 @@
       }
 
       .hero-section {
-        border-radius: 10px;
-
+       background-image: url("heroimg1.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+  animation: efecto ease-in-out infinite 20s;
+  height: 90vh;
+border-radius: 5px;
+  box-shadow: inset 0 -6px 8px rgba(0, 0, 0, 0.185);
       }
+
+
+@keyframes efecto {
+  20% {
+    background-image: url("heroimg2.png");
+  }
+  40% {
+    background-image: url("heroimg3.png");
+  }
+  60% {
+    background-image: url("heroimg4.png");
+  }
+  80% {
+    background-image: url("heroimg5.png");
+  }
+}
+
+.hero-content{
+  background-color: #d0d7a170;
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
       .hero-section h1 {
         color: #606c38; /* Hero title */
       }
 
       .hero-section p {
-        color:rgb(85 85 85); /* Hero subtitle */
+        color:rgb(26, 25, 25); /* Hero subtitle */
       }
 
       .hero-section .btn {
@@ -86,6 +116,10 @@
   padding: 1rem;
   border-radius: 4px;
   margin: 0.5rem 0;
+}
+
+.redondeta{
+    border-radius: 10px
 }
 
 #tabla{
