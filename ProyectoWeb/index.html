@@ -12,120 +12,141 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style2.css" />
+    <script src="script.js"></script>
   </head>
 
   <body>
     <!-- nav bar inicio -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand me-auto" href="#">
-          <img src="logo.png" alt="logo" width="30" height="24" />
-        </a>
-
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ecoblog</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  hogar
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="hogar.html">Action</a></li>
-                  <li><a class="dropdown-item" href="clipboard.html">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="clipboard.html">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  español
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  produccion
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">
+            <img src="logo.png" alt="logo" width="30" height="24" />
+          </a>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ecoblog</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <div class="d-flex" id="fondoprron">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
+                      hogar
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="hogar.html">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="clipboard.html"
+                          >Another action</a
+                        >
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="clipboard.html"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
                   </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <a id="link-conoceno" href="#" class="login-button">Conócenos</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      español
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      produccion
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Home</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <a id="link-conoceno" href="#" class="login-button">Conócenos</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
     <!-- nav bar final -->
 
     <!-- hero inicio -->
@@ -136,7 +157,14 @@
             <div class="hero-content">
               <h1>Naturaleza Cotidiana</h1>
               <p>
-                Un estilo de vida ecológico significa adoptar hábitos diarios que reducen nuestro impacto negativo en el planeta. No se trata de vivir en una cabaña aislada, sino de hacer pequeños cambios con sentido común (ser eco-lógico, como dice el juego de palabras). Estos cambios abarcan muchos aspectos de nuestra vida: cómo consumimos, qué comemos, cómo nos movemos y cómo manejamos nuestros residuos. Cada acción cuenta y suma ese granito de arena para un mundo más sostenible.
+                Un estilo de vida ecológico significa adoptar hábitos diarios
+                que reducen nuestro impacto negativo en el planeta. No se trata
+                de vivir en una cabaña aislada, sino de hacer pequeños cambios
+                con sentido común (ser eco-lógico, como dice el juego de
+                palabras). Estos cambios abarcan muchos aspectos de nuestra
+                vida: cómo consumimos, qué comemos, cómo nos movemos y cómo
+                manejamos nuestros residuos. Cada acción cuenta y suma ese
+                granito de arena para un mundo más sostenible.
               </p>
             </div>
           </div>

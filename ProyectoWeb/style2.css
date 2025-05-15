@@ -1,5 +1,5 @@
  body {
-        background-color: #ebe5cc; /* Background */
+        background-color: rgb(235, 229, 204); /* Background */
         color: #606c38; /* General text color */
       }
 
@@ -42,14 +42,19 @@
       }
 
       .navbar {
-        background-color: #ebe5cc;
         color: #606c38;
-        border-bottom: 2px solid #a9b57c;
       }
 
       .navbar-brand img {
         border-radius: 50%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      #fondoprron{
+        background-color: #ebe5cc70;
+        padding: 0 2em;
+        border-radius: 10px;
+        
       }
 
       .hero-section {
