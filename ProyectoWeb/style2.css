@@ -27,6 +27,20 @@ li {
   font-style: normal;
 }
 
+.abajo{
+  margin: 2rem 0;
+}
+
+#cards{
+  background-image: url("heroimg1.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+  border-radius: 30px;
+  height: 1 em;
+  box-shadow: inset 0 -6px 8px rgba(0, 0, 0, 0.185);
+}
+
 .card {
   background-color: #d0d7a1; /* Card Background */
   border: none;
