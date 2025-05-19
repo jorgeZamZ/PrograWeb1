@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Unidad 3 Actividad 07</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="Autor" content="Rubén Cáránnan Sánchez">
+  <meta name="fecha" content="15 de mayo de 2025">
+  <meta name="Descripción" content="JavaScript">
+  <script src="Actividad 07.js"></script>
+</head>
+<body>
+  <h1>Unidad 3 | Actividad 07 Tema (Javascript)</h1>
+  <form class="form-horizontal" name="frmControles" action="" method="post" onsubmit="funcionControles(); return false;">
+	<fieldset>
+	  <legend>Controles</legend>
+	  <!-- Radios -->
+	  <div class="form-group">
+		<label class="col-md-4 control-label" for="groupRadio">Elige el tamaño</label>
+		<div class="col-md-4">
+		  <div class="radio">
+			<label for="groupRadio-0">
+			  <input type="radio" name="groupRadio" id="groupRadio-0" value="95" checked="checked">
+			  Combo pequeño
+			</label>
+		  </div>
+		  <div class="radio">
+			<label for="groupRadio-1">
+			  <input type="radio" name="groupRadio" id="groupRadio-1" value="139">
+			  Combo mediano
+			</label>
+		  </div>
+		  <div class="radio">
+			<label for="groupRadio-2">
+			  <input type="radio" name="groupRadio" id="groupRadio-2" value="159">
+			  Combo grande
+			</label>
+		  </div>
+		</div>
+	  </div>
+	  <!-- Checkboxes -->
+	  <div class="form-group">
+		<label class="col-md-4 control-label" for="groupCheck">Elige ingredientes</label>
+		<div class="col-md-4">
+		  <div class="checkbox">
+			<label for="groupCheck-0">
+			  <input type="checkbox" name="groupCheck" id="groupCheck-0" value="1">
+			  Jamón
+			</label>
+		  </div>
+		  <div class="checkbox">
+			<label for="groupCheck-1">
+			  <input type="checkbox" name="groupCheck" id="groupCheck-1" value="2">
+			  Tocino
+			</label>
+		  </div>
+		  <div class="checkbox">
+			<label for="groupCheck-2">
+			  <input type="checkbox" name="groupCheck" id="groupCheck-2" value="3">
+			  Champiñón
+			</label>
+		  </div>
+		  <div class="checkbox">
+			<label for="groupCheck-3">
+			  <input type="checkbox" name="groupCheck" id="groupCheck-3" value="4">
+			  Pepperoni
+			</label>
+		  </div>
+		</div>
+	  </div>
+	  <!-- Select Básico -->
+	  <div class="form-group">
+		<label class="col-md-4 control-label" for="selectBasic">Elige complemento</label>
+		<div class="col-md-5">
+		  <select id="selectBasic" name="selectBasic" class="form-control">
+			<option value="0">Ninguno</option>
+			<option value="1">Papas</option>
+			<option value="2">Brownie</option>
+			<option value="3">Refresco</option>
+		  </select>
+		</div>
+	  </div>
+	  <!-- Select Múltiple -->
+	  <div class="form-group">
+		<label class="col-md-4 control-label" for="selectMultiple">Elige otras opciones</label>
+		<div class="col-md-5">
+		  <select id="selectMultiple" name="selectMultiple" class="form-control" multiple>
+			<option value="1">Mayonesa</option>
+			<option value="2">Cátchup</option>
+			<option value="3">Mostaza</option>
+			<option value="4">Ranch</option>
+			<option value="5">Pepinillos</option>
+			<option value="6">Jalapeños</option>
+		  </select>
+		</div>
+	  </div>
+	  <!-- Otros controles -->
+	  <div class="form-group">
+		<label>Archivos:</label> <input type="file" id="varFile"><br>
+		<label>Color:</label> <input type="color" id="varColor"><br>
+		<label>Fecha:</label> <input type="date" id="varDate"><br>
+		<label>Tiempo:</label> <input type="time" id="varTime"><br>
+		<label>Semana:</label> <input type="week" id="varWeek"><br>
+		<label>Mes:</label> <input type="month" id="varMonth"><br>
+		<label>Números:</label> <input type="number" id="varNumber" min="0" max="100" step="10" value="50"><br>
+		<label>Rango:</label> <input type="range" id="varRange" min="0" max="100" step="1" value="50"><br>
+	  </div>
+	  <!-- Botones -->
+	  <div class="form-group">
+		<div class="col-md-4">
+		  <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-primary" value="Enviar">
+		  <input type="reset" id="btnReiniciar" name="btnReiniciar" class="btn btn-info" value="Reiniciar">
+		</div>
+	  </div>
+	</fieldset>
+  </form>
+</body>
+</html>

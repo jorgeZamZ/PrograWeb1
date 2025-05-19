@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Unidad 3 | Actividad 03</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="Autor" content="Rubén Cárdenas Sánchez" />
+    <meta name="Fecha" content="30 de abril de 2025" />
+    <meta name="Descripción" content="JavaScript" />
+    <style>
+      table {
+        width: fit-content;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 3px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Unidad 3 | Actividad 3-1 :: Tema (JavaScript)</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Índice</th>
+          <th>Suma</th>
+          <th>Multiplicación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Las filas se generarán dinámicamente con JavaScript -->
+        <script>
+          let val_1 = Number(window.prompt("Dame el valor:"));
+
+          for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+              document.write("<tr style='background-color: lightblue;'>");
+            } else {
+              document.write("<tr style='background-color: white;'>");
+            }
+            document.write("<td>" + i + "</td>");
+            document.write(
+              "<td>" + val_1 + " + " + i + " = " + (val_1 + i) + "</td>"
+            );
+            document.write(
+              "<td>" + val_1 + " × " + i + " = " + val_1 * i + "</td>"
+            );
+            document.write("</tr>");
+          }
+        </script>
+      </tbody>
+    </table>
+  </body>
+</html>
