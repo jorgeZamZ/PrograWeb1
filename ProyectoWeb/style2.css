@@ -173,6 +173,56 @@ footer {
   }
 }
 
+.hero-sectionMov {
+  background-image: url("recursos/hmov1.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+  animation: efecto2 ease-in-out infinite 20s;
+  height: 100vh;
+  box-shadow: inset 0 -6px 8px rgba(0, 0, 0, 0.185);
+}
+
+@keyframes efecto2 {
+  20% {
+    background-image: url("recursos/hmov2.png");
+  }
+  40% {
+    background-image: url("recursos/hmov3.png");
+  }
+  60% {
+    background-image: url("recursos/hmov4.png");
+  }
+  80% {
+    background-image: url("recursos/hmov5.png");
+  }
+}
+
+.hero-sectionAli {
+  background-image: url("recursos/hali1.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+  animation: efectoAli ease-in-out infinite 20s;
+  height: 100vh;
+  box-shadow: inset 0 -6px 8px rgba(0, 0, 0, 0.185);
+}
+
+@keyframes efectoAli {
+  20% {
+    background-image: url("recursos/hali2.png");
+  }
+  40% {
+    background-image: url("recursos/hali3.png");
+  }
+  60% {
+    background-image: url("recursos/hali4.png");
+  }
+  80% {
+    background-image: url("recursos/hali5.png");
+  }
+}
+
 .hero-content {
   background-color: #d0d7a1a9;
   padding: 15px;
