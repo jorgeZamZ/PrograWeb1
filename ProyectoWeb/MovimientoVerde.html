@@ -1,355 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecoblog</title>
-    <!-- fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bentham&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style2.css" />
-    <script src="script.js"></script>
-  </head>
 
-  <body>
-    <!-- nav bar inicio -->
-    <header>
-      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand me-auto" href="index.html">
-            <img src="recursos/logo.png" alt="logo" width="30" height="24" />
-          </a>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ecoblog</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <div class="d-flex" id="fondoprron">
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      consumo
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="ConsumoResponsable.html"
-                          >inicio</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="ConsumoResponsable.html#primeros-pasos-section"
-                          >primeros pasos</a
-                        >
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="ConsumoResponsable.html#tabla-section"
-                          >tabla comparativa</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecoblog</title>
+  <!-- fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <script src="script.js"></script>
+</head>
 
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Movilidad
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="MovimientoVerde.html"
-                          >inicio</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="MovimientoVerde.html#primeros-pasos-section"
-                          >primeros pasos</a
-                        >
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="MovimientoVerde.html#tabla-section"
-                          >tabla comparativa</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Alimentacion
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="Alimentacion.html"
-                          >inicio</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="Alimentacion.html#primeros-pasos-section"
-                          >primeros pasos</a
-                        >
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="Alimentacion.html#tabla-section"
-                          >tabla comparativa</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Referencias</a>
-                  </li>
-                </div>
-              </ul>
-            </div>
+<body>
+  <!-- nav bar inicio -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container-fluid" id="fondoprron">
+        <a class="navbar-brand me-auto" href="index.html">
+          <img src="recursos/logo.png" alt="logo" width="70px" height="50px" />
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ecoblog</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <a id="link-conoceno" href="#" class="login-button">Conócenos</a>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 flex-column flex-lg-row">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  consumo
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="ConsumoResponsable.html">inicio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ConsumoResponsable.html#primeros-pasos-section">primeros pasos</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ConsumoResponsable.html#tabla-section">tabla
+                      comparativa</a>
+                  </li>
+                </ul>
+              </li>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </nav>
-    </header>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Movilidad
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="MovimientoVerde.html">inicio</a></li>
+                  <li>
+                    <a class="dropdown-item" href="MovimientoVerde.html#primeros-pasos-section">primeros pasos</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="MovimientoVerde.html#tabla-section">tabla
+                      comparativa</a>
+                  </li>
+                </ul>
+              </li>
 
-    <!-- nav bar final -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Alimentacion
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Alimentacion.html">inicio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Alimentacion.html#primeros-pasos-section">primeros pasos</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Alimentacion.html#tabla-section">tabla
+                      comparativa</a>
+                  </li>
+                </ul>
+              </li>
 
-    <!-- hero inicio -->
-    <section class="hero-sectionMov d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="hero-content">
-              <h1 class="taviraj-bold" style="font-size: 5rem">
-                Movilidad verde
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- hero final -->
-    <main calss="mcontainer">
-      <!-- basic info inicio -->
-      <section
-        id="basic-info"
-        class="padiny d-flex align-items-center justify-content-center"
-        style="height: 100vh; margin: auto"
-      >
-        <div
-          class="d-flex justify-content-center align-items-center"
-          style="height: fit-content"
-          id="basic-info-text"
-        >
-          <p style="text-align: center">
-            Adoptar medios de transporte sostenibles como la bicicleta, caminar
-            o usar el transporte público ayuda a reducir la contaminación del
-            aire, mejora la salud física y disminuye la congestión vehicular en
-            las ciudades.
-          </p>
-        </div>
-      </section>
-      <!-- basic info final -->
-      <section class="padiny" id="primeros-pasos-section">
-        <h2><strong>primeros pasos:</strong></h2>
-        <br />
-        <div class="row justify-content-center">
-          <div class="col">
-            <h5><strong>beneficios personales</strong></h5>
-            <br />
-            <ol class="bordeizq">
-              <li>
-                <strong>Camina</strong> distancias cortas siempre que puedas
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Hogar
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="hogarEco.html">inicio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hogarEco.html#primeros-pasos-section">¿que puedo hacer?</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hogarEco.html#tabla-section">tabla
+                      comparativa</a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                Usa la <strong>bici</strong> como medio de transporte diario
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  participacion
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="conciencia.html">inicio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="conciencia.html#primeros-pasos-section">¿que puedo hacer?</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="conciencia.html#tabla-section">tabla
+                      comparativa</a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <strong>Planifica</strong> rutas eficientes en transporte
-                público
-              </li>
-              <li><strong>Comparte auto</strong> o usa servicios ecológicos</li>
-              <li><strong>Reduce</strong> el uso del automóvil privado</li>
-            </ol>
-          </div>
-          <div class="col fullfil">
-            <h5><strong>recursos esenciales</strong></h5>
-            <br />
-            <ul>
-              <li><strong>Apps</strong> de rutas de transporte público</li>
-              <li><strong>Talleres comunitarios</strong> de bicicletas</li>
-              <li><strong>Mapas</strong> de ciclovías locales</li>
-              <li><strong>Foros</strong> sobre movilidad urbana</li>
-              <li>
-                <strong>Programas de gobierno</strong> sobre movilidad
-                sostenible
-              </li>
+
+
             </ul>
           </div>
         </div>
-      </section>
-      <!-- tabla inicio -->
-      <section class="padiny" id="tabla-section">
-        <div class="d-flex justify-content-center" id="tabla">
-          <table class="table text-center">
-            <thead>
-              <tr>
-                <th scope="col">Medio convencional</th>
-                <th scope="col">Alternativa verde</th>
-                <th scope="col">Beneficios</th>
-                <th scope="col">Ahorro anual estimado</th>
-              </tr>
-            </thead>
-            <tbody class="table-group-divider">
-              <tr>
-                <td>Auto particular</td>
-                <td>Bicicleta urbana</td>
-                <td>Cero emisiones y ejercicio diario</td>
-                <td>~$17,528 MXN y 1 tonelada de CO₂</td>
-              </tr>
-              <tr>
-                <td>Moto de gasolina</td>
-                <td>Transporte público</td>
-                <td>Menor huella ecológica</td>
-                <td>~$10,955 MXN</td>
-              </tr>
-              <tr>
-                <td>Viajes en taxi</td>
-                <td>Compartir auto (carpooling)</td>
-                <td>Reducción de tráfico y gastos</td>
-                <td>~$6,573 MXN</td>
-              </tr>
-              <tr>
-                <td>Autos antiguos</td>
-                <td>Vehículos eléctricos compartidos</td>
-                <td>Menos emisiones y menor consumo energético</td>
-                <td>~$13,146 MXN</td>
-              </tr>
-              <tr>
-                <td>Caminatas ocasionales</td>
-                <td>Caminatas diarias</td>
-                <td>Mejora de salud y sin gasto económico</td>
-                <td>~$4,382 MXN</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <!-- tabla final -->
-    </main>
 
-    <!-- iframe inicio -->
-    <section class="padiny align-items-center" id="iframe-section">
-      <div class="d-flex justify-content-center">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Hg7pQNmjq6c?si=l7SYswHyL5N9CCBU&amp;controls=0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+
+        <p class="nav-item" style="margin: 1rem;">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </p>
+
+
+
+        <p class="nav-item" style="margin: 1rem;">
+          <a class="nav-link" href="referencias.html"> Referencias</a>
+        </p>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
+    </nav>
+  </header>
+
+  <!-- nav bar final -->
+
+  <!-- hero inicio -->
+  <section class="hero-sectionMov d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="hero-content">
+            <h1 class="taviraj-bold" style="font-size: 5rem">
+              Movilidad verde
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero final -->
+  <!-- basic info inicio -->
+  <section id="basic-info" class="cintura d-flex align-items-center justify-content-center"
+    style="height: 100vh; margin: auto">
+    <div class="d-flex justify-content-center align-items-center" style="height: fit-content" id="basic-info-text">
+      <p style="text-align: justify; font-size: 1.5rem; line-height: 1.6; padding: 7rem;">
+        Adoptar medios de transporte sostenibles como la bicicleta, caminar
+        o usar el transporte público ayuda a reducir la contaminación del
+        aire, mejora la salud física y disminuye la congestión vehicular en
+        las ciudades.
+      </p>
+    </div>
+  </section>
+  <!-- basic info final -->
+
+  <!-- primeros pasos inicio -->
+  <section class="verdesection" id="primeros-pasos-section">
+    <div class="row justify-content-center" style="padding: 0 5rem; width: 100%;">
+      <h2><strong>Primeros pasos:</strong></h2>
+      <div class="col">
+        <ol class="bordeizq">
+          <li>
+            <strong>Camina</strong> distancias cortas siempre que puedas
+          </li>
+          <li>
+            Usa la <strong>bici</strong> como medio de transporte diario
+          </li>
+          <li>
+            <strong>Planifica</strong> rutas eficientes en transporte
+            público
+          </li>
+          <li><strong>Comparte auto</strong> o usa servicios ecológicos</li>
+          <li><strong>Reduce</strong> el uso del automóvil privado</li>
+        </ol>
+      </div>
+      <div class="col fullfil">
+        <h5><strong>recursos esenciales</strong></h5>
+        <br />
+        <ul>
+          <li><strong>Apps</strong> de rutas de transporte público</li>
+          <li><strong>Talleres comunitarios</strong> de bicicletas</li>
+          <li><strong>Mapas</strong> de ciclovías locales</li>
+          <li><strong>Foros</strong> sobre movilidad urbana</li>
+          <li>
+            <strong>Programas de gobierno</strong> sobre movilidad
+            sostenible
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- primeros pasos final -->
+<div class="separador"></div>
+  <!-- tabla inicio -->
+  <section class="cintura" id="tabla-section">
+    <div class="d-flex justify-content-center" id="tabla">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th scope="col">Medio convencional</th>
+            <th scope="col">Alternativa verde</th>
+            <th scope="col">Beneficios</th>
+            <th scope="col">Ahorro anual estimado</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td>Auto particular</td>
+            <td>Bicicleta urbana</td>
+            <td>Cero emisiones y ejercicio diario</td>
+            <td>~$17,528 MXN y 1 tonelada de CO₂</td>
+          </tr>
+          <tr>
+            <td>Moto de gasolina</td>
+            <td>Transporte público</td>
+            <td>Menor huella ecológica</td>
+            <td>~$10,955 MXN</td>
+          </tr>
+          <tr>
+            <td>Viajes en taxi</td>
+            <td>Compartir auto (carpooling)</td>
+            <td>Reducción de tráfico y gastos</td>
+            <td>~$6,573 MXN</td>
+          </tr>
+          <tr>
+            <td>Autos antiguos</td>
+            <td>Vehículos eléctricos compartidos</td>
+            <td>Menos emisiones y menor consumo energético</td>
+            <td>~$13,146 MXN</td>
+          </tr>
+          <tr>
+            <td>Caminatas ocasionales</td>
+            <td>Caminatas diarias</td>
+            <td>Mejora de salud y sin gasto económico</td>
+            <td>~$4,382 MXN</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- tabla final -->
+<div class="separador"></div>
+  <!-- iframe inicio -->
+  <section class=" align-items-center" id="iframe-section">
+        <h2 class="text-center">Video informativo</h2>
+        <div class="d-flex justify-content-center">
+            <iframe width="1500" height="846" src="https://www.youtube.com/embed/6FLNcJJnwHo?si=5jSNoSZYkrbTLPT_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </section>
-    <!-- iframe final -->
+  <!-- iframe final -->
+<div class="separador"></div>
+  <!-- footer inicio -->
+  <footer class="text-center py-4 -top">
+    <p>&copy; 2025 EcoBlog. Todos los derechos reservados.</p>
+  </footer>
+  <!-- footer final -->
 
-    <!-- footer inicio -->
-    <footer class="text-center py-4 -top">
-      <p>&copy; 2023 RapBlog. Todos los derechos reservados.</p>
-    </footer>
-    <!-- footer final -->
+  <!-- recursos de script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
 
-    <!-- recursos de script -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>

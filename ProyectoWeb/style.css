@@ -4,6 +4,7 @@
 }
 .color {
   background-color: #dd4444;
+  border: #000 solid 1px;
 }
 
 .cenrado {
@@ -19,8 +20,6 @@
 .text-center {
   text-align: center;
 }
-
-
 
 #tabla {
   margin: 20px;
